@@ -716,3 +716,85 @@ i {
   font-weight: 500;
   font-size: 0.9rem;
 }
+
+/* ===== PROFILE HEADER ===== */
+#profile-header-container {
+  position: relative;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#profile-header-container .cover {
+  background-image: url("assets/img/cover.jpg"); /* ubah sesuai file kamu */
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+.profile-header-content {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  padding: 0 20px 20px 20px;
+  position: relative;
+  margin-top: -60px; /* ini bikin avatar overlap dengan cover */
+}
+
+.profile-header-content .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.profile-text h2 {
+  margin: 0;
+  color: #111;
+  font-size: 1.4rem;
+}
+
+.profile-text p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.profile-text .stats {
+  margin-top: 5px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.edit-btn {
+  margin-left: auto;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-btn:hover {
+  background-color: #ddd;
+}
+
+/* ===== PROFILE BODY ===== */
+.profile-body {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.profile-info {
+  flex: 0 0 250px;
+}
+
+.profile-posts {
+  flex: 1;
+}

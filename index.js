@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     classes: {
       c1: {
         id: "c1",
-        name: "Introduction to Sociology",
+        name: "Introduction to Backend Lectures",
         profId: "u_prof_doe",
         icon: "https://i.imgur.com/gKx3b2j.png",
         banner: "#4A69E2", // Warna solid
