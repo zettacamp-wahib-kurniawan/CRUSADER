@@ -676,6 +676,13 @@ i {
   margin-right: 0;
 }
 
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 /* --- Halaman Assignments (BARU) --- */
 .assignment-list-item {
   display: flex;
