@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PeerConnect – Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout-3col">
+  <aside class="sidebar">
+    <div class="sidebar-logo">PeerConnect</div>
+    <div class="nav-section-label">Main</div>
+    <div class="nav-list">
+      <a href="feed.html" class="nav-link"><div class="nav-icon">🏠</div>Feed</a>
+      <a href="groups.html" class="nav-link"><div class="nav-icon">👥</div>Groups</a>
+      <a href="profile.html" class="nav-link active"><div class="nav-icon">👤</div>Profile</a>
+      <a href="admin.html" class="nav-link"><div class="nav-icon">🛡</div>Admin</a>
+    </div>
+  </aside>
+
+  <main class="main-col">
+    <header class="topbar">
+      <div class="topbar-title">Profile</div>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input class="search-input" placeholder="Search people..." />
+      </div>
+      <div class="user-pill">
+        <div class="user-avatar"></div>
+        <div>
+          <div>Emily Carter</div>
+          <div style="font-size:9px; color:var(--pc-text-muted);">Student</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="content-scroll">
+      <div class="card">
+        <div style="display:flex; gap:14px; align-items:flex-start;">
+          <div class="user-avatar" style="width:56px; height:56px;"></div>
+          <div>
+            <div style="font-size:18px; font-weight:600;">Emily Carter</div>
+            <div style="font-size:11px; color:var(--pc-text-muted);">
+              BSc Computer Science · Paris Campus · Class of 2025
+            </div>
+            <div style="margin-top:8px; font-size:11px;">
+              Passionate about ML, UI, and mentoring new students. Available for project collabs
+              and code review sessions.
+            </div>
+            <div style="margin-top:8px;">
+              <span class="badge-small">Machine Learning Basics</span>
+              <span class="badge-small">Databases 101</span>
+              <span class="badge-small">UX/UI Club</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="stats-row">
+          <div class="stat-box">
+            <div class="stat-label">Posts</div>
+            <div class="stat-value">34</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Answers</div>
+            <div class="stat-value">18</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Groups</div>
+            <div class="stat-value">5</div>
+          </div>
+        </div>
+
+        <div style="margin-top:10px; font-size:10px;">
+          <div class="stat-label" style="margin-bottom:4px;">Badges</div>
+          <span class="badge-small">🎓 Mentor</span>
+          <span class="badge-small">🔥 Weekly Contributor</span>
+          <span class="badge-small">🤝 Study Buddy</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="stat-label" style="margin-bottom:6px;">Recent Activity</div>
+        <ul style="font-size:10px; color:#374151; padding-left:16px;">
+          <li>Answered a question in “Databases 101 – Exam Squad” (4 upvotes)</li>
+          <li>Created post “Capstone ideas on healthcare AI”</li>
+          <li>Joined “Women in Tech @ Zetta” community</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <aside class="right-col">
+    <div class="card">
+      <div class="right-title">People similar to you</div>
+      <div class="profile-mini">
+        <div class="profile-mini-avatar"></div><div>Alex Martin · ML Track</div>
+      </div>
+      <div class="profile-mini">
+        <div class="profile-mini-avatar"></div><div>Zoé Lambert · UX Design</div>
+      </div>
+    </div>
+  </aside>
+</div>
+</body>
+</html>

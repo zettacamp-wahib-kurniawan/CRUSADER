@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PeerConnect – Feed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout-3col">
+  <aside class="sidebar">
+    <div class="sidebar-logo">PeerConnect</div>
+    <div>
+      <div class="nav-section-label">Main</div>
+      <div class="nav-list">
+        <a href="feed.html" class="nav-link active"><div class="nav-icon">🏠</div>Feed</a>
+        <a href="groups.html" class="nav-link"><div class="nav-icon">👥</div>Groups</a>
+        <a href="profile.html" class="nav-link"><div class="nav-icon">👤</div>Profile</a>
+        <a href="admin.html" class="nav-link"><div class="nav-icon">🛡</div>Admin</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-col">
+    <header class="topbar">
+      <div class="topbar-title">Feed</div>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input class="search-input" placeholder="Search posts, groups, people..." />
+      </div>
+      <div class="user-pill">
+        <div class="user-avatar"></div>
+        <div>
+          <div>Emily Carter</div>
+          <div style="font-size:9px; color:var(--pc-text-muted);">Computer Science · Student</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="content-scroll">
+      <div class="card composer">
+        <div class="user-avatar"></div>
+        <input class="composer-input" placeholder="Start a discussion with your peers..." />
+        <button class="composer-btn">Post</button>
+      </div>
+
+      <article class="card post-card">
+        <div class="post-header">
+          <div>
+            <div class="post-author">Jacob Lee · Databases 101</div>
+            <div class="post-meta">Study Group • 4h ago</div>
+          </div>
+          <div class="post-meta">•••</div>
+        </div>
+        <div class="post-body">
+          I'm starting a study group for Databases 101 before midterms. We'll meet twice a week on campus
+          and share notes on PeerConnect.
+        </div>
+        <div class="post-actions">
+          <span>👍 24</span>
+          <span>💬 9</span>
+          <span>🔖 Save</span>
+        </div>
+      </article>
+
+      <article class="card post-card">
+        <div class="post-header">
+          <div>
+            <div class="post-author">Sarah Wang · AI for Health</div>
+            <div class="post-meta">Question • 3h ago</div>
+          </div>
+        </div>
+        <div class="post-body">
+          Can anyone explain the intuition behind SVM margins in simple terms? Examples welcome 👀
+        </div>
+        <div class="post-actions">
+          <span>👍 12</span>
+          <span>💬 6</span>
+          <span>✅ Mark as solved</span>
+        </div>
+      </article>
+
+      <article class="card post-card">
+        <div class="post-header">
+          <div>
+            <div class="post-author">Program Office</div>
+            <div class="post-meta">Announcement • 1d ago</div>
+          </div>
+        </div>
+        <div class="post-body">
+          📢 Capstone project clinic this Friday at 16:00 in Lab C. Join the thread here to add your
+          project topic and get matched with a mentor.
+        </div>
+        <div class="post-actions">
+          <span>👍 40</span>
+          <span>💬 18</span>
+          <span>📌 Pinned</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <aside class="right-col">
+    <div class="card">
+      <div class="right-title">Your Study Groups</div>
+      <div class="badge-pill">Databases 101 – Exam Squad</div>
+      <div class="badge-pill">Machine Learning Basics</div>
+      <div class="badge-pill">French Campus Exchange</div>
+    </div>
+
+    <div class="card">
+      <div class="right-title">Suggested Connections</div>
+      <div class="profile-mini">
+        <div class="profile-mini-avatar"></div>
+        <div>
+          <div>Linda Kim</div>
+          <div style="font-size:9px; color:var(--pc-text-muted);">Data Science · Same campus</div>
+        </div>
+      </div>
+      <div class="profile-mini">
+        <div class="profile-mini-avatar"></div>
+        <div>
+          <div>Marc Dubois</div>
+          <div style="font-size:9px; color:var(--pc-text-muted);">Frontend Dev · UX Club</div>
+        </div>
+      </div>
+      <div class="profile-mini">
+        <div class="profile-mini-avatar"></div>
+        <div>
+          <div>Aisha Khan</div>
+          <div style="font-size:9px; color:var(--pc-text-muted);">AI Lab Mentor</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="right-title">Engagement Snapshot</div>
+      <div style="font-size:11px;">
+        Posts this week: <b>18</b><br>
+        Replies this week: <b>74</b><br>
+        Active groups: <b>9</b>
+      </div>
+    </div>
+  </aside>
+</div>
+</body>
+</html>

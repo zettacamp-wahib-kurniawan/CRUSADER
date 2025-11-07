@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PeerConnect – Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout-3col">
+  <aside class="sidebar">
+    <div class="sidebar-logo">PeerConnect</div>
+    <div class="nav-section-label">Main</div>
+    <div class="nav-list">
+      <a href="feed.html" class="nav-link"><div class="nav-icon">🏠</div>Feed</a>
+      <a href="groups.html" class="nav-link"><div class="nav-icon">👥</div>Groups</a>
+      <a href="profile.html" class="nav-link"><div class="nav-icon">👤</div>Profile</a>
+      <a href="admin.html" class="nav-link active"><div class="nav-icon">🛡</div>Admin</a>
+    </div>
+  </aside>
+
+  <main class="main-col">
+    <header class="topbar">
+      <div class="topbar-title">Admin Dashboard</div>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input class="search-input" placeholder="Search reports..." />
+      </div>
+      <div class="user-pill">
+        <div class="user-avatar"></div>
+        <div>
+          <div>Admin User</div>
+          <div style="font-size:9px; color:var(--pc-text-muted);">Moderator</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="content-scroll">
+      <div class="card">
+        <div style="display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; font-size:10px;">
+          <div>
+            <div class="stat-label">Active Users (7d)</div>
+            <div class="stat-value">482</div>
+          </div>
+          <div>
+            <div class="stat-label">Posts Created</div>
+            <div class="stat-value">1236</div>
+          </div>
+          <div>
+            <div class="stat-label">Reported Items</div>
+            <div class="stat-value">7</div>
+          </div>
+          <div>
+            <div class="stat-label">Avg Response Time</div>
+            <div class="stat-value">1.4h</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="right-title">Reported Content Queue</div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Post</th>
+              <th>Reason</th>
+              <th>Author</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>“Looking for exam answers...”</td>
+              <td><span class="badge-alert">Academic integrity</span></td>
+              <td>Student #54213</td>
+              <td>
+                <button class="btn-small">Hide</button>
+                <button class="btn-small">Warn</button>
+              </td>
+            </tr>
+            <tr>
+              <td>“Off-topic promo link”</td>
+              <td><span class="badge-alert">Spam</span></td>
+              <td>Student #33781</td>
+              <td>
+                <button class="btn-small">Remove</button>
+                <button class="btn-small">Mute</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="right-title">Configuration Snapshot</div>
+        <ul style="font-size:10px; margin-left:16px; color:#374151;">
+          <li>Only authenticated Zetta ERP users can access PeerConnect.</li>
+          <li>Campus + program based visibility rules enabled.</li>
+          <li>Auto-flag posts with 3+ reports or banned terms.</li>
+          <li>Teachers can create official announcement groups.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <aside class="right-col">
+    <div class="card">
+      <div class="right-title">Quick Toggles</div>
+      <div style="font-size:10px;">
+        ✅ Enable new-campus beta<br>
+        ✅ Restrict direct messages for minors<br>
+        ✅ Notify admins on 5+ reports
+      </div>
+    </div>
+  </aside>
+</div>
+</body>
+</html>
